@@ -11,6 +11,35 @@ class RoutineScreen extends ConsumerStatefulWidget {
 class _RoutineScreenState extends ConsumerState<RoutineScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.note,
+              size: 80,
+              color: Colors.purple,
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Routine Screen',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'This is Routine Screen',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
